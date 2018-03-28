@@ -33,13 +33,7 @@ def getAllUrl(numPage):
 
 
 def saveinfo(infostring):
-    num_info = 0
-    root = "G://"
-    path = root + 'url.csv'
-    if not os.path.exists(root):  # 判断根目录是否存在
-        os.mkdir(root)
-
-    with open("douban.txt", "w") as f:
+    with open("top10000.txt", "w") as f:
         f.write(infostring)
 
 def getAllinfo(info_url_lists):
